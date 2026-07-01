@@ -380,6 +380,38 @@
                 margin-bottom: 4px
             }
 
+            .day-time-list {
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px
+            }
+
+            .day-time-item {
+                display: flex;
+                gap: 14px;
+                align-items: flex-start
+            }
+
+            .day-time-label {
+                font-family: 'Josefin Sans',sans-serif;
+                font-size: 11px;
+                letter-spacing: .08em;
+                flex-shrink: 0;
+                padding-top: 3px;
+                min-width: 80px
+            }
+
+            .d1 .day-time-label { color: #4a8aaa }
+            .d2 .day-time-label { color: #4a7848 }
+            .d3 .day-time-label { color: #a07830 }
+
+            .day-time-text {
+                font-size: 13px;
+                line-height: 1.8;
+                color: var(--mid)
+            }
+
             .spot {
                 font-size: 12px;
                 padding: 5px 14px;
@@ -961,7 +993,7 @@
                     <div class="hero-info-row">
                         <span class="hero-info-label">形式</span>
                         <span class="hero-info-val">
-                            10人程度 / 回<span class="sub">（※応募多数の場合先着順）</span>
+                            最大12名 / 回<span class="sub">（※応募多数の場合、熱意・動機による選考あり）</span>
                         </span>
                     </div>
                 </div>
@@ -970,7 +1002,7 @@
                         <p class="hero-date-num">第1回</p>
                         <p class="hero-date-date">
                             2026年<br>
-                            8/3(月)–5(水)<br>
+                            8/26(水)–28(金)<br>
                             <span class="sub">（2泊3日）</span>
                         </p>
                     </div>
@@ -978,7 +1010,7 @@
                         <p class="hero-date-num">第2回</p>
                         <p class="hero-date-date">
                             2026年<br>
-                            9/21(月)–23(水)<br>
+                            9/19(土)–21(月)<br>
                             <span class="sub">（2泊3日）</span>
                         </p>
                     </div>
@@ -1072,6 +1104,8 @@
                     </div>
                 </div>
                 <div class="day-list">
+
+                    <!-- DAY 1 -->
                     <div class="day-card d1">
                         <div class="day-photo">
                             <div class="pblock pb-sky" style="width:100%;height:100%;position:relative">
@@ -1083,10 +1117,16 @@
                         <div class="day-body">
                             <h3>身体をひらく——知らない世界に飛び込む</h3>
                             <p>ここは、誰も経験したことのない課題に向き合い続ける場所。</p>
-                            <p>町を歩き、人と出会い、風景に触れる。</p>
-                            <p>頭で理解するのではなく、まずは身体で感じる。</p>
+                            <p>午後、富岡駅に集合して3日間がはじまる。まずはこの地域を身体ごと感じるフィールドワークへ。浪江・双葉・大熊・富岡をめぐりながら、圧倒的なスケールの現実に触れる。夜は参加者みんなで夕食を囲みながら、翌日の「問い」と向き合う時間。</p>
+                            <div class="spots">
+                                <span class="spot">富岡駅前集合（13:00）</span>
+                                <span class="spot">地域フィールドワーク</span>
+                                <span class="spot">夕食交流会</span>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- DAY 2 -->
                     <div class="day-card d2">
                         <div class="day-photo">
                             <div class="pblock pb-sage" style="width:100%;height:100%;position:relative">
@@ -1097,11 +1137,17 @@
                         </div>
                         <div class="day-body">
                             <h3>心をひらく——他者の人生に触れる</h3>
-                            <p>移住者や起業家、地域で挑戦を続ける人たちと対話する。</p>
-                            <p>なぜここにいるのか。なぜその選択をしたのか。</p>
-                            <p>他者の生き方に触れることで、いつの間にか自分の価値観や将来について考え始める。</p>
+                            <p>「問い」を携えて、4つの町へ。道に迷い、人と話し、風景の中を彷徨う。</p>
+                            <p>それぞれの町でしか出会えない人がいる。採取してきた食材や、出会いの記憶を持ち寄り、夕暮れには移住者や地域住民も交じった食卓を囲む。言葉にならない感触を、そのまま持ち帰っていい夜。</p>
+                            <div class="spots">
+                                <span class="spot">富岡・大熊・浪江・双葉に分散</span>
+                                <span class="spot">まちを歩く・人と出会う</span>
+                                <span class="spot">夕食：地域住民と混じり合う</span>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- DAY 3 -->
                     <div class="day-card d3">
                         <div class="day-photo">
                             <div class="pblock pb-gold" style="width:100%;height:100%;position:relative">
@@ -1113,10 +1159,16 @@
                         <div class="day-body">
                             <h3>自分と向き合う——まだ言葉にならない想いを見つける</h3>
                             <p>3日間で出会った景色、人、言葉を振り返る。</p>
-                            <p>何に心が動いたのか。どんな未来に惹かれたのか。</p>
-                            <p>仲間との対話を通して、「自分はどう生きたいのか」という問いに向き合う。</p>
+                            <p>「AIが正解を出してくれる時代に、どう生きるか」——大きな問いを前に、まずはこの時代の変化について少し視点を広げる時間がある。そして前の2日間で身体と心が感じてきたことを、仲間と言葉にしていく。話しながら、自分が何に揺れ、何に惹かれたのかが、うっすらと輪郭を結んでくる。</p>
+                            <p>すっきりした答えは出なくていい。「心地よいモヤモヤ」を抱えたまま、日常へ帰ろう。昼食後、富岡駅で解散。</p>
+                            <div class="spots">
+                                <span class="spot">リフレクション</span>
+                                <span class="spot">メタ対話「これからの生き方」</span>
+                                <span class="spot">昼食後・富岡駅解散（15:00）</span>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -1230,36 +1282,43 @@
             <div class="s-dark-inner">
                 <div class="sec-head">
                     <span class="sec-en light">How to Join</span>
-                    <h2 class="ttl white">エントリーから参加まで</h2>
-                    <p class="ttl-sub white">まずはフォームを送信。<br>説明会で詳細をお伝えします。</p>
+                    <h2 class="ttl white">申し込みの流れ</h2>
+                    <p class="ttl-sub white">まずはフォームを送信。<br>録画視聴・選考を経て参加確定となります。</p>
                 </div>
                 <div class="flow-steps">
                     <div class="flow-step">
                         <div class="fn">01</div>
                         <div class="fb">
                             <h3>エントリーフォームを送信</h3>
-                            <p>氏名・学校・参加動機等を記入して送信。参加費は無料です。</p>
+                            <p>氏名・連絡先を記入して送信。参加費は無料です。自動返信メールで説明会録画のURLをお送りします。</p>
                         </div>
                     </div>
                     <div class="flow-step">
                         <div class="fn">02</div>
                         <div class="fb">
-                            <h3>オンライン説明会に参加（必須・30〜45分）</h3>
-                            <p>プログラム詳細の確認・不安や疑問を解消する場。エントリー後の参加が必須です。</p>
+                            <h3>説明会録画を視聴</h3>
+                            <p>プログラムの詳細・日程・持ち物・諸注意を録画でご確認いただけます。自分のペースで視聴してください。</p>
                         </div>
                     </div>
                     <div class="flow-step">
                         <div class="fn">03</div>
                         <div class="fb">
-                            <h3>2泊3日 現地プログラム</h3>
-                            <p>富岡・双葉・浪江・大熊をめぐる越境学習。先輩メンターが年間を通してサポートします。</p>
+                            <h3>参加意思フォームを提出</h3>
+                            <p>氏名・連絡先・志望動機・緊急連絡先を記入して提出。録画視聴後にお送りください。</p>
                         </div>
                     </div>
                     <div class="flow-step">
                         <div class="fn">04</div>
                         <div class="fb">
-                            <h3>事後フォロー・再訪機会</h3>
-                            <p>再訪・インターン・PJ参画の案内。一度きりで終わらない関係を設計しています。</p>
+                            <h3>事務局が選考</h3>
+                            <p>熱意・動機を基準に各回最大12名を選考。不採用の場合は次回案内または繰り上げルールをご説明します。</p>
+                        </div>
+                    </div>
+                    <div class="flow-step">
+                        <div class="fn">05</div>
+                        <div class="fb">
+                            <h3>参加確定・オンラインMTG</h3>
+                            <p>参加確定の連絡後、参加者×主催者のオンラインMTGを実施。質疑・自己紹介・諸注意を確認してツアーへ。</p>
                         </div>
                     </div>
                 </div>
